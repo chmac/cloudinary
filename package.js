@@ -16,6 +16,7 @@ Package.on_use(function (api){
 	api.use(["meteor-base","coffeescript","mongo"], ["client", "server"]);
 	api.use(["templating"], "client");
 	api.use(["check","random"], ["client","server"]);
+	api.imply(["random"], "client");
 
 	// External Packages
 	api.use(["matb33:collection-hooks@0.7.3"], ["client", "server"],{weak:true});
